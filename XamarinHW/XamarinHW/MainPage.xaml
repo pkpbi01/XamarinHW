@@ -3,22 +3,233 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinHW.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    <StackLayout
+        BackgroundColor="Black">
+        <Label
+            Text="Coffee"
+            FontSize="20"
+            FontFamily=""
+            TextColor="White"
+            HorizontalOptions="Center"
+            />
+        <Grid 
+            HeightRequest="180" 
+            BackgroundColor="White"
+            Margin="30, 5">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Image 
+                Grid.Column="0" 
+                Grid.Row="0" 
+                Grid.RowSpan="3"  
+                Source="espresso.jpg" 
+                HeightRequest="100" 
+                WidthRequest="100"/>
+            <Label
+                FontSize="20"
+                TextColor="Black"
+                Grid.Column="1" 
+                Grid.Row="0" 
+                Text="Jungle Expresso"
+                Margin="0, 40, 0, 0"
+                FontAttributes="Bold"
+                />
+            <Label
+                FontSize="13"
+                TextColor="Gray"
+                Grid.Column="1" 
+                Grid.Row="1" 
+                Text="By UXDivers"
+                Margin="0"
+                />
+            <Label
+                FontSize="30"
+                TextColor="Black"
+                Grid.Column="1" 
+                Grid.Row="2" 
+                Text="$ 2.75"
+                FontAttributes="Bold"
+                />
+
+        </Grid>
+        <Grid 
+            HeightRequest="240" 
+            BackgroundColor="White"
+            Margin="30, 5"
+            Padding="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Image 
+                Grid.Column="0" 
+                Grid.Row="0"  
+                Source="coffeeBean.png"
+                Margin="5"/>
+            <Image 
+                Grid.Column="0" 
+                Grid.Row="1"  
+                Source="cup.png"
+                Margin="0,-15,0,5"/>
+            <Image 
+                Grid.Column="0" 
+                Grid.Row="2"  
+                Source="fork_knife.png"
+                Margin="10"/>
+            <Image 
+                Grid.Column="0" 
+                Grid.Row="3"  
+                Source="barista.png"
+                VerticalOptions="Center"/>
+            <Label
+                FontSize="18"
+                TextColor="Black"
+                Grid.Column="1" 
+                Grid.Row="0" 
+                Text="Intensity"
+                VerticalOptions="Center"
+                FontAttributes="Bold"
+                />
+            <Label
+                FontSize="18"
+                TextColor="Black"
+                Grid.Column="1" 
+                Grid.Row="1" 
+                Text="Acidity"
+                VerticalOptions="Center"
+                FontAttributes="Bold"
+                />
+            <Label
+                FontSize="18"
+                TextColor="Black"
+                Grid.Column="1" 
+                Grid.Row="2" 
+                Text="Preparation"
+                VerticalOptions="Center"
+                FontAttributes="Bold"
+                />
+            <Label
+                FontSize="18"
+                TextColor="Black"
+                Grid.Column="1" 
+                Grid.Row="3" 
+                Text="Size"
+                VerticalOptions="Center"
+                FontAttributes="Bold"
+                />
+            <StackLayout
+                HeightRequest="10"
+                Margin="10"
+                Grid.Row="0"
+                Grid.Column="2">
+                <Frame CornerRadius="20" BackgroundColor="Bisque" Padding="10, 2" HeightRequest="20">
+                    <Label 
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="Strong"
+                    TextColor="Black"
+                    />
+                </Frame>
+            </StackLayout>
+            <StackLayout
+                HeightRequest="10"
+                Margin="10"
+                Grid.Row="1"
+                Grid.Column="2">
+                <Frame CornerRadius="20" BackgroundColor="Bisque" Padding="10, 2" HeightRequest="20">
+                    <Label 
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="Sharp"
+                    TextColor="Black"
+                    />
+                </Frame>
+            </StackLayout>
+            <StackLayout
+                HeightRequest="10"
+                Margin="10"
+                Grid.Row="2"
+                Grid.Column="2">
+                <Frame CornerRadius="20" BackgroundColor="Bisque" Padding="10, 2" HeightRequest="20">
+                    <Label 
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="8 minutes"
+                    TextColor="Black"
+                    />
+                </Frame>
+            </StackLayout>
+            <StackLayout
+                HeightRequest="10"
+                Margin="10"
+                Grid.Row="3"
+                Grid.Column="2">
+                <Frame CornerRadius="20" BackgroundColor="Bisque" Padding="10, 2" HeightRequest="20">
+                    <Label 
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="Small"
+                    TextColor="Black"
+                    />
+                </Frame>
+            </StackLayout>
+            <BoxView 
+                VerticalOptions="End"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                HeightRequest="0.5"
+                Color="Gray"
+                Margin="20, 0"/>
+            <BoxView 
+                VerticalOptions="End"
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                HeightRequest="0.5"
+                Color="Gray"
+                Margin="20, 0"/>
+            <BoxView 
+                VerticalOptions="End"
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                HeightRequest="0.5"
+                Color="Gray"
+                Margin="20, 0"/>
+        </Grid>
+        <Button 
+            Margin="30,15,30,5"
+            BackgroundColor="Bisque"
+            BorderColor="Brown"
+            Text="Place your order"
+            />
+        <Button 
+            Margin="30,5"
+            BorderColor="Gray"
+            BorderWidth="1.5"
+            Text="Add to favorites"
+            />
+
+
+
     </StackLayout>
 
 </ContentPage>
