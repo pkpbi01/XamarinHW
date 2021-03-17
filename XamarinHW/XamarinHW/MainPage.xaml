@@ -1,235 +1,150 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinHW.MainPage">
+<ContentPage
+    x:Class="XamarinHW.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:strings="clr-namespace:XamarinHW.Resources">
 
-    <StackLayout
-        BackgroundColor="Black">
+    <StackLayout BackgroundColor="White">
         <Label
-            Text="Coffee"
             FontSize="20"
-            FontFamily=""
-            TextColor="White"
             HorizontalOptions="Center"
-            />
-        <Grid 
-            HeightRequest="180" 
+            Text="{Binding CoffeModel.Price, Mode=OneWay}"
+            TextColor="Black" />
+        <Frame
+            Margin="30,5"
+            Padding="0"
             BackgroundColor="White"
-            Margin="30, 5">
-            
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="150"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="65"/>
-                <RowDefinition Height="25"/>
-                <RowDefinition />
-            </Grid.RowDefinitions>
+            HasShadow="True"
+            HeightRequest="180">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="65" />
+                    <RowDefinition Height="25" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
 
-            <Image 
-                Grid.Column="0" 
-                Grid.Row="0" 
-                Grid.RowSpan="3"  
-                Source="espresso.jpg" 
-                HeightRequest="100" 
-                WidthRequest="100"/>
-            <Label
-                FontSize="20"
-                TextColor="Black"
-                Grid.Column="1" 
-                Grid.Row="0" 
-                Text="Jungle Expresso"
-                Margin="0, 40, 0, 0"
-                FontAttributes="Bold"
-                />
-            <Label
-                FontSize="13"
-                TextColor="Gray"
-                Grid.Column="1" 
-                Grid.Row="1" 
-                Text="By UXDivers"
-                Margin="0"
-                />
-            <Label
-                FontSize="30"
-                TextColor="Black"
-                Grid.Column="1" 
-                Grid.Row="2" 
-                Text="$ 2.75"
-                FontAttributes="Bold"
-                />
+                <Image
+                    Grid.Row="0"
+                    Grid.RowSpan="3"
+                    Grid.Column="0"
+                    HeightRequest="100"
+                    Source="espresso.jpg"
+                    WidthRequest="100" />
+                <Label
+                    Grid.Row="0"
+                    Margin="0,40,0,0"
+                    FontSize="20"
+                    Style="{StaticResource LabelStyle2}"
+                    Text="{x:Static strings:Strings.LblCoffeName1}"
+                    TextColor="Black" />
+                <Label
+                    Grid.Row="1"
+                    Margin="0"
+                    FontAttributes="None"
+                    FontSize="13"
+                    Style="{StaticResource LabelStyle2}"
+                    Text="{x:Static strings:Strings.LblCoffeMaker1}"
+                    TextColor="Gray" />
+                <Label
+                    Grid.Row="2"
+                    FontSize="30"
+                    Style="{StaticResource LabelStyle2}"
+                    Text="{Binding CoffeModel.Price, Mode=OneWay}"
+                    TextColor="Black" />
 
-        </Grid>
-        <Grid 
-            HeightRequest="240" 
+            </Grid>
+        </Frame>
+        <Frame
+            Margin="30,5"
+            Padding="5"
             BackgroundColor="White"
-            Margin="30, 5"
-            Padding="0">
+            HasShadow="True"
+            HeightRequest="220">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70" />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Margin="5"
+                    Source="coffeeBean.png" />
+                <Image
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Margin="0,-15,0,5"
+                    Source="cup.png" />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Margin="10"
+                    Source="fork_knife.png" />
+                <Image
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Source="barista.png"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="0"
+                    Style="{StaticResource LabelStyle1}"
+                    Text="{x:Static strings:Strings.LabelProp1}" />
+                <Label
+                    Grid.Row="1"
+                    Style="{StaticResource LabelStyle1}"
+                    Text="{x:Static strings:Strings.LabelProp2}" />
+                <Label
+                    Grid.Row="2"
+                    Style="{StaticResource LabelStyle1}"
+                    Text="{x:Static strings:Strings.LabelProp3}" />
+                <Label
+                    Grid.Row="3"
+                    Style="{StaticResource LabelStyle1}"
+                    Text="{x:Static strings:Strings.LabelProp4}" />
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="70"/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            <Image 
-                Grid.Column="0" 
-                Grid.Row="0"  
-                Source="coffeeBean.png"
-                Margin="5"/>
-            <Image 
-                Grid.Column="0" 
-                Grid.Row="1"  
-                Source="cup.png"
-                Margin="0,-15,0,5"/>
-            <Image 
-                Grid.Column="0" 
-                Grid.Row="2"  
-                Source="fork_knife.png"
-                Margin="10"/>
-            <Image 
-                Grid.Column="0" 
-                Grid.Row="3"  
-                Source="barista.png"
-                VerticalOptions="Center"/>
-            <Label
-                FontSize="18"
-                TextColor="Black"
-                Grid.Column="1" 
-                Grid.Row="0" 
-                Text="Intensity"
-                VerticalOptions="Center"
-                FontAttributes="Bold"
-                />
-            <Label
-                FontSize="18"
-                TextColor="Black"
-                Grid.Column="1" 
-                Grid.Row="1" 
-                Text="Acidity"
-                VerticalOptions="Center"
-                FontAttributes="Bold"
-                />
-            <Label
-                FontSize="18"
-                TextColor="Black"
-                Grid.Column="1" 
-                Grid.Row="2" 
-                Text="Preparation"
-                VerticalOptions="Center"
-                FontAttributes="Bold"
-                />
-            <Label
-                FontSize="18"
-                TextColor="Black"
-                Grid.Column="1" 
-                Grid.Row="3" 
-                Text="Size"
-                VerticalOptions="Center"
-                FontAttributes="Bold"
-                />
-            <StackLayout
-                HeightRequest="10"
-                Margin="10"
-                Grid.Row="0"
-                Grid.Column="2">
-                <Frame CornerRadius="20" BackgroundColor="Bisque" Padding="10, 2" HeightRequest="20">
-                    <Label 
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    Text="Strong"
-                    TextColor="Black"
-                    />
-                </Frame>
-            </StackLayout>
-            <StackLayout
-                HeightRequest="10"
-                Margin="10"
-                Grid.Row="1"
-                Grid.Column="2">
-                <Frame CornerRadius="20" BackgroundColor="Bisque" Padding="10, 2" HeightRequest="20">
-                    <Label 
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    Text="Sharp"
-                    TextColor="Black"
-                    />
-                </Frame>
-            </StackLayout>
-            <StackLayout
-                HeightRequest="10"
-                Margin="10"
-                Grid.Row="2"
-                Grid.Column="2">
-                <Frame CornerRadius="20" BackgroundColor="Bisque" Padding="10, 2" HeightRequest="20">
-                    <Label 
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    Text="8 minutes"
-                    TextColor="Black"
-                    />
-                </Frame>
-            </StackLayout>
-            <StackLayout
-                HeightRequest="10"
-                Margin="10"
-                Grid.Row="3"
-                Grid.Column="2">
-                <Frame CornerRadius="20" BackgroundColor="Bisque" Padding="10, 2" HeightRequest="20">
-                    <Label 
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    Text="Small"
-                    TextColor="Black"
-                    />
-                </Frame>
-            </StackLayout>
-            <BoxView 
-                VerticalOptions="End"
-                Grid.Row="0"
-                Grid.Column="0"
-                Grid.ColumnSpan="3"
-                HeightRequest="0.5"
-                Color="Gray"
-                Margin="20, 0"/>
-            <BoxView 
-                VerticalOptions="End"
-                Grid.Row="1"
-                Grid.Column="0"
-                Grid.ColumnSpan="3"
-                HeightRequest="0.5"
-                Color="Gray"
-                Margin="20, 0"/>
-            <BoxView 
-                VerticalOptions="End"
-                Grid.Row="2"
-                Grid.Column="0"
-                Grid.ColumnSpan="3"
-                HeightRequest="0.5"
-                Color="Gray"
-                Margin="20, 0"/>
-        </Grid>
-        <Button 
+                <Button
+                    Grid.Row="0"
+                    Style="{StaticResource ButtonProperty}"
+                    Text="{x:Static strings:Strings.BtnProp1}" />
+                <Button
+                    Grid.Row="1"
+                    Style="{StaticResource ButtonProperty}"
+                    Text="{x:Static strings:Strings.BtnProp2}" />
+                <Button
+                    Grid.Row="2"
+                    Style="{StaticResource ButtonProperty}"
+                    Text="{x:Static strings:Strings.BtnProp3}" />
+                <Button
+                    Grid.Row="3"
+                    Clicked="SizeOfCoffe_Clicked"
+                    Style="{StaticResource ButtonProperty}"
+                    Text="{x:Static strings:Strings.BtnProp4}" />
+                <BoxView Grid.Row="0" Style="{StaticResource BoxStyle}" />
+                <BoxView Grid.Row="1" Style="{StaticResource BoxStyle}" />
+                <BoxView Grid.Row="2" Style="{StaticResource BoxStyle}" />
+            </Grid>
+        </Frame>
+        <Button
             Margin="30,15,30,5"
             BackgroundColor="Bisque"
-            BorderColor="Brown"
-            Text="Place your order"
-            />
-        <Button 
+            Style="{StaticResource ButtonEnd}"
+            Text="{x:Static strings:Strings.ButtonString1}" />
+        <Button
             Margin="30,5"
-            BorderColor="Gray"
-            BorderWidth="1.5"
-            Text="Add to favorites"
-            />
-
-
-
+            BackgroundColor="Transparent"
+            Style="{StaticResource ButtonEnd}"
+            Text="{x:Static strings:Strings.ButtonString2}" />
     </StackLayout>
-
 </ContentPage>
