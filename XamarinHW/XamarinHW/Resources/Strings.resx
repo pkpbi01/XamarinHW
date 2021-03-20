@@ -165,8 +165,20 @@
   <data name="LblCoffeMaker1" xml:space="preserve">
     <value>By UXDivers</value>
   </data>
+  <data name="LblCoffeMaker2" xml:space="preserve">
+    <value>By UTRCompony</value>
+  </data>
+  <data name="LblCoffeMaker3" xml:space="preserve">
+    <value>By UWQ</value>
+  </data>
   <data name="LblCoffeName1" xml:space="preserve">
     <value>Jungle Expresso</value>
+  </data>
+  <data name="LblCoffeName2" xml:space="preserve">
+    <value>Americano Mint </value>
+  </data>
+  <data name="LblCoffeName3" xml:space="preserve">
+    <value>Latte Ice</value>
   </data>
   <data name="LblCoffePrice1" xml:space="preserve">
     <value>$ 2.75</value>

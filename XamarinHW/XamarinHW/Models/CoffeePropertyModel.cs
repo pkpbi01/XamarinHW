@@ -6,16 +6,16 @@ using System.Text;
 
 namespace XamarinHW.Models
 {
-    public class CoffeModel : INotifyPropertyChanged
+    public class CoffeePropertyModel : INotifyPropertyChanged
     {
-        private string _price;
-        public string Price
+        private string _picture;
+        public string Picture
         {
-            get => _price;
+            get => _picture;
             set
             {
-                _price = value;
-                OnPropertyChanged(nameof(Price));
+                _picture = value;
+                OnPropertyChanged(nameof(Picture));
             }
         }
 
@@ -30,14 +30,14 @@ namespace XamarinHW.Models
             }
         }
 
-        private string _maker;
-        public string Maker
+        private string _buttonText;
+        public string ButtonText
         {
-            get => _maker;
+            get => _buttonText;
             set
             {
-                _maker = value;
-                OnPropertyChanged(nameof(Maker));
+                _buttonText = value;
+                OnPropertyChanged(nameof(ButtonText));
             }
         }
 

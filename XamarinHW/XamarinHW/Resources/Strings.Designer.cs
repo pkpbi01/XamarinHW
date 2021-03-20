@@ -205,11 +205,47 @@ namespace XamarinHW.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to By UTRCompony.
+        /// </summary>
+        internal static string LblCoffeMaker2 {
+            get {
+                return ResourceManager.GetString("LblCoffeMaker2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to By UWQ.
+        /// </summary>
+        internal static string LblCoffeMaker3 {
+            get {
+                return ResourceManager.GetString("LblCoffeMaker3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Jungle Expresso.
         /// </summary>
         internal static string LblCoffeName1 {
             get {
                 return ResourceManager.GetString("LblCoffeName1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Americano Mint .
+        /// </summary>
+        internal static string LblCoffeName2 {
+            get {
+                return ResourceManager.GetString("LblCoffeName2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Latte Ice.
+        /// </summary>
+        internal static string LblCoffeName3 {
+            get {
+                return ResourceManager.GetString("LblCoffeName3", resourceCulture);
             }
         }
         

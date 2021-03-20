@@ -30,15 +30,12 @@ namespace XamarinHW
                 if(btn.Text == Strings.BtnProp4)
                 {
                     btn.Text = Strings.BtnProp4_2;
-                    _viewModel.CoffeModel.Price = Strings.LblCoffePrice2;
                 } else if (btn.Text == Strings.BtnProp4_2)
                 {
                     btn.Text = Strings.BtnProp4_3;
-                    _viewModel.CoffeModel.Price = Strings.LblCoffePrice3;
                 } else if(btn.Text == Strings.BtnProp4_3)
                 {
                     btn.Text = Strings.BtnProp4;
-                    _viewModel.CoffeModel.Price = Strings.LblCoffePrice1;
                 }
 
             }
