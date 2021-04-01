@@ -1,10 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "yZpZLGb6wVyt76CYbc1SN+V89x1L5rOxsQ/GbDsFe7rzB8qyE/eQRwhtSPVV3yVVRaM9fKapIvcQi81OrAfo5A==",
+  "dgSpecHash": "+d+Lkg5MYXvXmmHezF0+a/5WrX8hZr5rdF7JWlgkavRNUZyy9xWLWjdpiqEc5tJ95ikfSMdDgDoEc5KhL4PEqQ==",
   "success": true,
   "projectFilePath": "C:\\Mob\\XamarinHW\\XamarinHW\\XamarinHW.iOS\\XamarinHW.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\я\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+    "C:\\Users\\я\\.nuget\\packages\\microsoft.net.test.sdk\\16.9.1\\microsoft.net.test.sdk.16.9.1.nupkg.sha512",
+    "C:\\Users\\я\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\я\\.nuget\\packages\\refit\\6.0.38\\refit.6.0.38.nupkg.sha512",
+    "C:\\Users\\я\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\я\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
     "C:\\Users\\я\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\я\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\я\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
+    "C:\\Users\\я\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512",
     "C:\\Users\\я\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],

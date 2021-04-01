@@ -56,3 +56,12 @@ C:\Mob\XamarinHW\XamarinHW\XamarinHW.iOS\obj\iPhone\Debug\XamarinHW.iOS.csproj.C
 C:\Mob\XamarinHW\XamarinHW\XamarinHW.iOS\obj\iPhone\Debug\XamarinHW.iOS.csproj.CopyComplete
 C:\Mob\XamarinHW\XamarinHW\XamarinHW.iOS\obj\iPhone\Debug\XamarinHW.iOS.exe
 C:\Mob\XamarinHW\XamarinHW\XamarinHW.iOS\obj\iPhone\Debug\XamarinHW.iOS.pdb
+C:\Mob\XamarinHW\XamarinHW\XamarinHW.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+C:\Mob\XamarinHW\XamarinHW\XamarinHW.iOS\bin\iPhone\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Mob\XamarinHW\XamarinHW\XamarinHW.iOS\bin\iPhone\Debug\Refit.dll
+C:\Mob\XamarinHW\XamarinHW\XamarinHW.iOS\bin\iPhone\Debug\System.Buffers.dll
+C:\Mob\XamarinHW\XamarinHW\XamarinHW.iOS\bin\iPhone\Debug\System.Net.Http.Json.dll
+C:\Mob\XamarinHW\XamarinHW\XamarinHW.iOS\bin\iPhone\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Mob\XamarinHW\XamarinHW\XamarinHW.iOS\bin\iPhone\Debug\System.Text.Encodings.Web.dll
+C:\Mob\XamarinHW\XamarinHW\XamarinHW.iOS\bin\iPhone\Debug\System.Text.Json.dll
+C:\Mob\XamarinHW\XamarinHW\XamarinHW.iOS\obj\iPhone\Debug\XamarinHW.iOS.GeneratedMSBuildEditorConfig.editorconfig

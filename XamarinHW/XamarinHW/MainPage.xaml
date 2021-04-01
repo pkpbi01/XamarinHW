@@ -7,10 +7,10 @@
 
     <StackLayout BackgroundColor="White">
         <Label
+            FontFamily="Lobster"
             FontSize="20"
             HorizontalOptions="Center"
             Text="CoffeeShop"
-            FontFamily="Lobster"
             TextColor="Black" />
         <Frame
             Margin="30,5"
@@ -80,22 +80,19 @@
                                 WidthRequest="150" />
                             <Button
                                 Padding="0"
-                                Text="{Binding ButtonText}"
-                                Clicked="SizeOfCoffe_Clicked"
                                 Command="{Binding BindingContext.ChangeCoffeParametersCommand, Source={x:Reference CollectionView}}"
-                                CommandParameter="{Binding partnerLink}"
                                 Style="{StaticResource ButtonProperty}"
-                                 />
+                                Text="{Binding ButtonText}" />
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </Frame>
 
-
         <Button
             Margin="30,15,30,5"
             BackgroundColor="Bisque"
+            Clicked="Button_GoToHttpPage"
             Style="{StaticResource ButtonEnd}"
             Text="{x:Static strings:Strings.ButtonString1}" />
         <Button

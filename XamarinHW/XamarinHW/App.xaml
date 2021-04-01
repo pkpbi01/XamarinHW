@@ -5,8 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:styles="clr-namespace:XamarinHW.Resources.Styles">
     <Application.Resources>
-        <ResourceDictionary Source="/Resources/Styles/ButtonStyles.xaml"/>
-        <ResourceDictionary Source="/Resources/Styles/BoxStyles.xaml"/>
-        <ResourceDictionary Source="/Resources/Styles/LabelStyles.xaml"/>
+        <ResourceDictionary Source="/Resources/Styles/ButtonStyles.xaml" />
+        <ResourceDictionary Source="/Resources/Styles/BoxStyles.xaml" />
+        <ResourceDictionary Source="/Resources/Styles/LabelStyles.xaml" />
     </Application.Resources>
 </Application>

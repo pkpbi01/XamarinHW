@@ -18,7 +18,6 @@ namespace XamarinHW.ViewModels
         public ICommand ChangeCoffeParametersCommand { get; set; }
 
         public ObservableCollection<CoffeePropertyModel> _properties;
-
         public ObservableCollection<CoffeePropertyModel> Properties
         {
             get => _properties;
@@ -30,7 +29,6 @@ namespace XamarinHW.ViewModels
         }
 
         private CoffeePropertyModel _coffeePropertyModel;
-
         public CoffeePropertyModel CoffeePropertyModel
         {
             get => _coffeePropertyModel;
@@ -41,7 +39,6 @@ namespace XamarinHW.ViewModels
         }
 
         private CoffeModel _coffeModel;
-
         public CoffeModel CoffeModel
         {
             get => _coffeModel;
@@ -55,46 +52,48 @@ namespace XamarinHW.ViewModels
         {
             ChangeCoffeParametersCommand = new Command(ChangeCoffeParameters);
 
-            _coffeModel = new CoffeModel();
-            _coffeModel.Price = Strings.LblCoffePrice1;
-            _coffeModel.Name = Strings.LblCoffeName1;
-            _coffeModel.Maker = Strings.LblCoffeMaker1;
-
-
-            Properties = new ObservableCollection<CoffeePropertyModel>();
-            Properties.Add(new CoffeePropertyModel()
+            _coffeModel = new CoffeModel
             {
-                Picture = "coffeeBean.png",
-                Name = Strings.LabelProp1,
-                ButtonText = Strings.BtnProp1
-            });
-            Properties.Add(new CoffeePropertyModel()
+                Price = Strings.LblCoffePrice1,
+                Name = Strings.LblCoffeName1,
+                Maker = Strings.LblCoffeMaker1
+            };
+            Properties = new ObservableCollection<CoffeePropertyModel>
             {
-                Picture = "cup.png",
-                Name = Strings.LabelProp2,
-                ButtonText = Strings.BtnProp2
-            });
-            Properties.Add(new CoffeePropertyModel()
-            {
-                Picture = "fork_knife.png",
-                Name = Strings.LabelProp3,
-                ButtonText = Strings.BtnProp3
-            });
-            Properties.Add(new CoffeePropertyModel()
-            {
-                Picture = "barista.png",
-                Name = Strings.LabelProp4,
-                ButtonText = Strings.BtnProp4
-            });
-            Properties.Add(new CoffeePropertyModel()
-            {
-                Picture = "barista.png",
-                Name = Strings.LabelProp4,
-                ButtonText = Strings.BtnProp4
-            });
+                new CoffeePropertyModel()
+                {
+                    Picture = "coffeeBean.png",
+                    Name = Strings.LabelProp1,
+                    ButtonText = Strings.BtnProp1
+                },
+                new CoffeePropertyModel()
+                {
+                    Picture = "cup.png",
+                    Name = Strings.LabelProp2,
+                    ButtonText = Strings.BtnProp2
+                },
+                new CoffeePropertyModel()
+                {
+                    Picture = "fork_knife.png",
+                    Name = Strings.LabelProp3,
+                    ButtonText = Strings.BtnProp3
+                },
+                new CoffeePropertyModel()
+                {
+                    Picture = "barista.png",
+                    Name = Strings.LabelProp4,
+                    ButtonText = Strings.BtnProp4
+                },
+                new CoffeePropertyModel()
+                {
+                    Picture = "barista.png",
+                    Name = Strings.LabelProp4,
+                    ButtonText = Strings.BtnProp4
+                }
+            };
         }
 
-        public void ChangeCoffeParameters()
+        private void ChangeCoffeParameters()
         {
             if (CoffeModel.Price == Strings.LblCoffePrice1)
             {
