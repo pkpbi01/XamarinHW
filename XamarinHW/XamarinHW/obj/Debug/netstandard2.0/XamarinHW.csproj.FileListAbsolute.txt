@@ -2,7 +2,6 @@ C:\Mob\XamarinHW\XamarinHW\XamarinHW\bin\Debug\netstandard2.0\XamarinHW.deps.jso
 C:\Mob\XamarinHW\XamarinHW\XamarinHW\bin\Debug\netstandard2.0\XamarinHW.dll
 C:\Mob\XamarinHW\XamarinHW\XamarinHW\bin\Debug\netstandard2.0\ref\XamarinHW.dll
 C:\Mob\XamarinHW\XamarinHW\XamarinHW\bin\Debug\netstandard2.0\XamarinHW.pdb
-C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\XamarinHW.csprojAssemblyReference.cache
 C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\XamarinHW.AssemblyInfoInputs.cache
@@ -19,3 +18,4 @@ C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\Resources\Styles\B
 C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\Resources\Styles\LabelStyles.xaml.g.cs
 C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\PageForHttp.xaml.g.cs
 C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\XamarinHW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\CustomView\CoffeeView.xaml.g.cs

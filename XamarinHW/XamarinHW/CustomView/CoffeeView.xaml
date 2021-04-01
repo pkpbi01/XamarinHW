@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinHW.CustomView.CoffeeView">
+  <ContentView.Content>
+        <Frame
+            Margin="30,5"
+            Padding="0"
+            BackgroundColor="White"
+            HasShadow="True"
+            HeightRequest="180">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="65" />
+                    <RowDefinition Height="25" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Image x:Name="CoffeeImage"
+                    Grid.Row="0"
+                    Grid.RowSpan="3"
+                    Grid.Column="0"
+                    HeightRequest="100"
+                    Source="espresso.jpg"
+                    WidthRequest="100" />
+                <Label
+                    Grid.Row="0"
+                    Margin="0,40,0,0"
+                    FontSize="20"
+                    Style="{StaticResource LabelStyle2}"
+                    Text="{Binding CoffeModel.Name}"
+                    TextColor="Black" />
+                <Label
+                    Grid.Row="1"
+                    Margin="0"
+                    FontAttributes="None"
+                    FontSize="13"
+                    Style="{StaticResource LabelStyle2}"
+                    Text="{Binding CoffeModel.Maker}"
+                    TextColor="Gray" />
+                <Label
+                    Grid.Row="2"
+                    FontSize="30"
+                    Style="{StaticResource LabelStyle2}"
+                    Text="{Binding CoffeModel.Price}"
+                    TextColor="Black" />
+
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>
