@@ -590,3 +590,5 @@ C:\Mob\XamarinHW\XamarinHW\XamarinHW.Android\obj\Debug\110\lp\71\jl\files.cache
 C:\Mob\XamarinHW\XamarinHW\XamarinHW.Android\obj\Debug\110\lp\76\jl\files.cache
 C:\Mob\XamarinHW\XamarinHW\XamarinHW.Android\obj\Debug\110\lp\79\jl\files.cache
 C:\Mob\XamarinHW\XamarinHW\XamarinHW.Android\obj\Debug\110\lp\87\jl\files.cache
+C:\Mob\XamarinHW\XamarinHW\XamarinHW.Android\obj\Debug\110\android\src\crc64d063b42222697d0e\CustomButtonRenderer.java
+C:\Mob\XamarinHW\XamarinHW\XamarinHW.Android\obj\Debug\110\android\src\crc64d063b42222697d0e\CustomFrameRenderer.java

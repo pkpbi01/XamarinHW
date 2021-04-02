@@ -6,6 +6,7 @@ using Android.Views;
 using Android.Widget;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using Xamarin.Forms;
@@ -23,5 +24,16 @@ namespace XamarinHW.Droid.Renderer
         {
 
         }
+
+        protected override void OnElementChanged(Xamarin.Forms.Platform.Android.ElementChangedEventArgs<Frame> e)
+        {
+            base.OnElementChanged(e);
+            CardElevation = 50;
+            if (Control != null)
+            {
+                Control.SetOutlineSpotShadowColor(Android.Graphics.Color.Red);
+            }
+        }
+        
     }
 }

@@ -1,12 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinHW.CustomView.CoffeeView">
-  <ContentView.Content>
-        <Frame
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="XamarinHW.CustomView.CoffeeView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:custum="clr-namespace:XamarinHW.CustomView">
+    <ContentView.Content>
+        <custum:CustomFrame
             Margin="30,5"
-            Padding="0"
-            BackgroundColor="White"
+            Padding="1"
+            BorderColor ="Black"
             HasShadow="True"
             HeightRequest="180">
             <Grid>
@@ -20,21 +22,24 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
 
-                <Image x:Name="CoffeeImage"
+                <Image
+                    x:Name="CoffeeImage"
                     Grid.Row="0"
                     Grid.RowSpan="3"
                     Grid.Column="0"
                     HeightRequest="100"
                     Source="espresso.jpg"
                     WidthRequest="100" />
-                <Label x:Name="CoffeeName"
+                <Label
+                    x:Name="CoffeeName"
                     Grid.Row="0"
                     Margin="0,40,0,0"
                     FontSize="20"
                     Style="{StaticResource LabelStyle2}"
                     Text="{Binding CoffeModel.Name}"
                     TextColor="Black" />
-                <Label x:Name="CoffeeMaker"
+                <Label
+                    x:Name="CoffeeMaker"
                     Grid.Row="1"
                     Margin="0"
                     FontAttributes="None"
@@ -42,7 +47,8 @@
                     Style="{StaticResource LabelStyle2}"
                     Text="{Binding CoffeModel.Maker}"
                     TextColor="Gray" />
-                <Label x:Name="CoffeePrice"
+                <Label
+                    x:Name="CoffeePrice"
                     Grid.Row="2"
                     FontSize="30"
                     Style="{StaticResource LabelStyle2}"
@@ -50,6 +56,6 @@
                     TextColor="Black" />
 
             </Grid>
-        </Frame>
+        </custum:CustomFrame>
     </ContentView.Content>
 </ContentView>
