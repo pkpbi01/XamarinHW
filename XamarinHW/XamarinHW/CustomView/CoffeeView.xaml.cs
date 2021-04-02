@@ -28,7 +28,7 @@ namespace XamarinHW.CustomView
         {
             if (bindable is CoffeeView coffeeView)
             {
-                //coffeeView.CoffeeImage = (string)newvalue;
+                coffeeView.CoffeeImage.Source = (string)newvalue;
             }
         }
 
@@ -45,7 +45,10 @@ namespace XamarinHW.CustomView
         }
         private static void NamePropertyChanged(BindableObject bindable, object oldvalue, object newvalue)
         {
-
+            if (bindable is CoffeeView coffeeView)
+            {
+                coffeeView.CoffeeName.Text = (string)newvalue;
+            }
         }
 
         public static BindableProperty MakerProperty =
@@ -61,7 +64,10 @@ namespace XamarinHW.CustomView
         }
         private static void MakerPropertyChanged(BindableObject bindable, object oldvalue, object newvalue)
         {
-
+            if (bindable is CoffeeView coffeeView)
+            {
+                coffeeView.CoffeeMaker.Text = (string)newvalue;
+            }
         }
 
         public static BindableProperty PriceProperty =
@@ -77,7 +83,10 @@ namespace XamarinHW.CustomView
         }
         private static void PricePropertyChanged(BindableObject bindable, object oldvalue, object newvalue)
         {
-
+            if (bindable is CoffeeView coffeeView)
+            {
+                coffeeView.CoffeePrice.Text = (string)newvalue;
+            }
         }
 
         public CoffeeView()

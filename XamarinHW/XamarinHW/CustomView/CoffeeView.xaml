@@ -27,14 +27,14 @@
                     HeightRequest="100"
                     Source="espresso.jpg"
                     WidthRequest="100" />
-                <Label
+                <Label x:Name="CoffeeName"
                     Grid.Row="0"
                     Margin="0,40,0,0"
                     FontSize="20"
                     Style="{StaticResource LabelStyle2}"
                     Text="{Binding CoffeModel.Name}"
                     TextColor="Black" />
-                <Label
+                <Label x:Name="CoffeeMaker"
                     Grid.Row="1"
                     Margin="0"
                     FontAttributes="None"
@@ -42,7 +42,7 @@
                     Style="{StaticResource LabelStyle2}"
                     Text="{Binding CoffeModel.Maker}"
                     TextColor="Gray" />
-                <Label
+                <Label x:Name="CoffeePrice"
                     Grid.Row="2"
                     FontSize="30"
                     Style="{StaticResource LabelStyle2}"
