@@ -30,6 +30,7 @@ namespace XamarinHW.Droid.Renderer
             if (Control != null)
             {
                 Control.SetAllCaps(false);
+
             }
         }
     }

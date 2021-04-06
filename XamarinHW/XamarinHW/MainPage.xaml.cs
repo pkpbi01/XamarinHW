@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinHW.Pages;
 using XamarinHW.Resources;
 using XamarinHW.ViewModels;
 
@@ -25,7 +26,7 @@ namespace XamarinHW
 
         private void Button_GoToHttpPage(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new PageForHttp());
+            Navigation.PushAsync(new HttpPage());
         }
     }
 }
