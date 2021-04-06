@@ -26,7 +26,6 @@ namespace XamarinHW
 
         private void Button_GoToHttpPage(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new HttpPage());
         }
     }
 }
