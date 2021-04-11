@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -67,6 +68,64 @@ namespace XamarinHW.ViewModels
                 }
             }
 
+        }
+    }
+
+    public static class UsersS
+    {
+        public static IList<User> Users { get; private set; }
+
+        static UsersS()
+        {
+            Users = new List<User>();
+            Users.Add(new User
+            {
+                Id = 1,
+                Email = "fsdsfsdf",
+                FirstName = "artur",
+                LastName = "",
+                Avatar = ""
+            });
+            Users.Add(new User
+            {
+                Id = 1,
+                Email = "ghdfh",
+                FirstName = "adam",
+                LastName = "",
+                Avatar = ""
+            });
+            Users.Add(new User
+            {
+                Id = 1,
+                Email = "aer",
+                FirstName = "tom",
+                LastName = "",
+                Avatar = ""
+            });
+        }
+    }
+
+    public class Search : SearchHandler
+    {
+        protected override void OnQueryChanged(string oldValue, string newValue)
+        {
+            base.OnQueryChanged(oldValue, newValue);
+            if (string.IsNullOrWhiteSpace(newValue))
+            {
+                ItemsSource = null;
+            }
+            else
+            {
+                ItemsSource = UsersS.Users.Where(user => user.FirstName.ToLower().Contains(newValue.ToLower())).ToList<User>();
+            }
+        }
+
+        protected override async void OnItemSelected(object item)
+        {
+            base.OnItemSelected(item);
+            var user = item as User;
+            if (user is null) return;
+            await App.Current.MainPage.DisplayAlert("Это", user.FirstName, ",он ищет кофе");
         }
     }
 }

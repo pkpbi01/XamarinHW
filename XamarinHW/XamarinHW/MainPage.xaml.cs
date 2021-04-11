@@ -24,8 +24,16 @@ namespace XamarinHW
 
         }
 
-        private void Button_GoToHttpPage(object sender, EventArgs e)
+        private async void Button_GoToHttpPage(object sender, EventArgs e)
         {
+            await Shell.Current.GoToAsync("//HttpPage");
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            var buttom = (Button)sender;
+            await buttom.ScaleTo(0.9, 100);
+            await buttom.ScaleTo(1, 100);
         }
     }
 }

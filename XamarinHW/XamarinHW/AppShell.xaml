@@ -3,26 +3,41 @@
     x:Class="XamarinHW.AppShell"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:pages="clr-namespace:XamarinHW.Pages"
-    xmlns:local="clr-namespace:XamarinHW">
+    xmlns:local="clr-namespace:XamarinHW"
+    xmlns:pages="clr-namespace:XamarinHW.Pages">
 
 
-    <TabBar Title="NAV">
-        <Tab Title="MainPage" Icon="coffeeBean.png">
+    <TabBar>
+        <Tab
+            Title="MainPage"
+            Icon="coffeeBean.png"
+            Route="MainPage">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
         </Tab>
 
-        <Tab Title="Page1" Icon="coffeeBean.png">
-            <ShellContent Title="Main Page"
-                      Icon="coffeeBean.png"
-                      ContentTemplate="{DataTemplate local:MainPage}" />
-            <ShellContent Title="Page2"
-                      Icon="coffeeBean.png"
-                      ContentTemplate="{DataTemplate pages:HttpPage}" />
+        <Tab 
+            Title="Page1" 
+            Icon="coffeeBean.png">
+            <ShellContent
+                Title="Main Page"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Icon="coffeeBean.png" />
+            <ShellContent
+                Title="Page2"
+                ContentTemplate="{DataTemplate pages:HttpPage}"
+                Icon="coffeeBean.png"
+                Route="HttpPage" />
         </Tab>
 
-        <Tab Title="Page2" Icon="coffeeBean.png">
+        <Tab 
+            Title="Page2" 
+            Icon="coffeeBean.png">
             <ShellContent ContentTemplate="{DataTemplate pages:HttpPage}" />
+        </Tab>
+        <Tab 
+            Title="Search" 
+            Icon="coffeeBean.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:SearcgPage}" />
         </Tab>
     </TabBar>
 </Shell>

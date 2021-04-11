@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinHW.Pages.SearcgPage"
+             xmlns:controls="clr-namespace:XamarinHW.ViewModels">
+
+    <Shell.SearchHandler>
+        <controls:Search 
+                Placeholder="Enter search item"
+                ShowsResults="true"            
+                >
+            <controls:Search.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="10">
+                        <Label Text="{Binding FirstName}" TextColor="Black" FontAttributes="Bold"/>
+                    </StackLayout>
+
+                </DataTemplate>
+            </controls:Search.ItemTemplate>
+        </controls:Search>
+    </Shell.SearchHandler>
+</ContentPage>

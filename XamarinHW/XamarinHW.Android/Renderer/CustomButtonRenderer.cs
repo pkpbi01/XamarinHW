@@ -30,7 +30,9 @@ namespace XamarinHW.Droid.Renderer
             if (Control != null)
             {
                 Control.SetAllCaps(false);
-
+                Control.SetShadowLayer(5, 15, 20, Android.Graphics.Color.Red);
+                Control.SetOutlineSpotShadowColor(Android.Graphics.Color.Black);
+                
             }
         }
     }

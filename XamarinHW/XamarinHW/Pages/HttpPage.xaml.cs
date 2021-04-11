@@ -21,5 +21,10 @@ namespace XamarinHW.Pages
             _pageForHttpVM = new PageForHttpVM();
             this.BindingContext = _pageForHttpVM;
         }
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("//MainPage");
+        }
     }
 }

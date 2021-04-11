@@ -21,3 +21,4 @@ C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\CustomView\CoffeeV
 C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\Pages\HttpPage.xaml.g.cs
 C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\XamarinHW.csprojAssemblyReference.cache
+C:\Mob\XamarinHW\XamarinHW\XamarinHW\obj\Debug\netstandard2.0\Pages\SearcgPage.xaml.g.cs
